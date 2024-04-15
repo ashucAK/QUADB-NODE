@@ -4,7 +4,7 @@ function Data() {
   const [tickers, setTickers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/dbtickers")
+    fetch("https://quadb-node-backend.vercel.app/api/dbtickers")
       .then((response) => response.json())
       .then((data) => {
         setTickers(data);
