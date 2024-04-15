@@ -104,6 +104,10 @@ const save=async()=>{
   }
 };
 
+app.get("/", async(req,res) => {
+  res.send("Hello world");
+})
+
 app.get('/api/top10tickers', async (req, res) => {
   try {
     const data = await save();
